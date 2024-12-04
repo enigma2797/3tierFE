@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Product List</h2>
+  
+    <!-- Show loading message or spinner if data is still being fetched -->
+    <div *ngIf="isLoading">Loading products...</div>
+  
+    <!-- Table displaying products once data is fetched -->
+    <table *ngIf="!isLoading" class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.title }}</td>
+          <td>{{ product.price}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

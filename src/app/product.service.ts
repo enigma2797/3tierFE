@@ -18,7 +18,7 @@ import { map, Observable } from 'rxjs';
   
 export class ProductService {
 
-  private apiUrl = 'http://127.0.0.1:8180/app2/products';  // Spring Boot API endpoint
+  private apiUrl = 'http://localhost:8080/app/products';  // Spring Boot API endpoint
 
   constructor(private http: HttpClient) { }
 
